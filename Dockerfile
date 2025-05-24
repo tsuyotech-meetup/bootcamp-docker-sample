@@ -9,8 +9,7 @@ COPY /app /app
 
 # 依存関係をインストール
 RUN apt-get update
-RUN apt-get update
-RUN apt-get install -y curl
+RUN apt-get install -y curl vim git wget
 RUN pip install --no-cache-dir -r requirements.txt
 
 # ポートを公開
